@@ -3,3 +3,69 @@ html{
     padding : 0;
     font-size : 10px;
 }
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-template-areas: 
+    "header nav nav "
+    "aside section section "
+    "footer footer footer";
+    grid-gap: 3rem;
+}
+
+header{
+    grid-area: header;
+    justify-self: left;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "accueil disciplines horaires contact propos urgence";
+}
+
+li{
+    list-style: none;
+}
+
+.Accueil{
+    grid-area: accueil;
+}
+
+.Disciplines{
+    grid-area: disciplines;
+}
+
+.Horaires{
+    grid-area: horaires;
+}
+
+.Contact{
+    grid-area: contact;
+}
+
+.Propos{
+    grid-area : propos;
+}
+
+.Urgence{
+    grid-area: urgence;
+}
+
+aside{
+    grid-area: aside;
+}
+
+section{
+    grid-area: section;
+}
+
+.footer{
+    grid-area: footer;
+}
