@@ -20,6 +20,7 @@ body{
     "header nav nav "
     "hr hr hr"
     "aside section section "
+    "hrFooter hrFooter hrFooter"
     "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
@@ -83,13 +84,22 @@ hr{
 }
 aside{
     grid-area: aside;
+    border: .25rem solid #F2E1AC;
 }
 
 section{
     grid-area: section;
+    border: .25rem solid #F2E1AC;
+}
+
+.hrBeforeFooter
+{
+    grid-area: hrFooter;
+    border: .25rem solid #F2E1AC;
 }
 
 .footer{
     grid-area: footer;
     justify-self: center;
+    padding-bottom: 4rem;
 }
