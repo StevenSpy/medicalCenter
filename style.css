@@ -290,9 +290,9 @@ section p{
     grid-template-areas: 
     "header nav nav "
     "hr hr hr"
-    "sectionBonneville sectionBonneville sectionBonneville"
-    "sectionRoux sectionRoux sectionRoux"
-    "sectionHoang sectionHoang sectionHoang"
+    "sectionQui sectionQui sectionQui"
+    "figure figure figure"
+    "sectionQue sectionQue sectionQue"
     "hrFooter hrFooter hrFooter"
     "footer footer footer";
     grid-column-gap: 3rem;
@@ -310,3 +310,10 @@ section p{
 .sectionQueFaisons{
     grid-area: sectionQue;
 }
+
+/* ================== Style for FIGURE ================== */
+
+figure{
+    grid-area: figure;
+}
+
