@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-
+/* ================== Reset CSS ================== */
 html{
     margin: 0;
     padding : 0;
@@ -11,6 +11,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* ================== For the index.html page ==================  */
 
 .content{
     display: grid;
@@ -28,6 +30,7 @@ body{
     background-color: #F2594B;
 }
 
+/* ================== Style for the HEADER and the MENU ==================  */
 
 header{
     grid-area: header;
@@ -51,6 +54,11 @@ nav{
 
 li{
     list-style: none;
+}
+
+a li{
+    text-decoration: none;
+    color: #F2E1AC;
 }
 
 .Accueil{
@@ -77,11 +85,16 @@ li{
     grid-area: urgence;
 }
 
+/* ================== Style for a  horizontal demarcation between the HEADER / MENU and ASIDE and SECTION part ==================  */ 
+
 hr{
     grid-area: hr;
     width: 100%;
     border: .25rem solid #F2E1AC;
 }
+
+/* ================== Style for the ASIDE ==================  */
+
 aside{
     grid-area: aside;
     border: .5rem solid #F2836B;
@@ -91,6 +104,8 @@ aside{
 .h2Aside, .texteAside{
     padding-left: 2rem;
 }
+
+/* ================== Style for the SECTION ==================  */
 
 section{
     grid-area: section;
@@ -103,11 +118,15 @@ section{
     text-align: center;
 }
 
+/* ================== Style for a  horizontal demarcation between the FOOTER and ASIDE and SECTION part ==================  */
+
 .hrBeforeFooter
 {
     grid-area: hrFooter;
     border: .25rem solid #F2E1AC;
 }
+
+/* ================== Style for the FOOTER ==================  */
 
 .footer{
     grid-area: footer;
@@ -121,4 +140,116 @@ section{
     text-decoration: none;
     color: #F2E1AC;
     
+}
+
+/* ================== For the nosDisciplines.html page ================== */
+
+.contentDisciplines{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(1rem, auto);
+        grid-template-areas: 
+        "header nav nav "
+        "hr hr hr"
+        "sectionMG sectionMG asideMG"
+        "sectionOphtalmo sectionOphtalmo asideOphtalmo"
+        "hrFooter hrFooter hrFooter"
+        "footer footer footer";
+        grid-column-gap: 3rem;
+        grid-row-gap: 4rem;
+        font-size: 1.5rem;
+        background-color: #F2594B;
+}
+
+/* ================== Style for the HEADER and the MENU ==================  */
+
+header{
+    grid-area: header;
+    justify-self: left;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);   
+    grid-template-areas: "accueil disciplines horaires contact propos urgence";
+    text-align: center;
+    padding-top: 8rem;
+    color: #F2E1AC;
+
+    
+}
+
+li{
+    list-style: none;
+}
+
+a li{
+    text-decoration: none;
+    color: #F2E1AC;
+}
+
+.Accueil{
+    grid-area: accueil;
+}
+
+.Disciplines{
+    grid-area: disciplines;
+}
+
+.Horaires{
+    grid-area: horaires;
+}
+
+.Contact{
+    grid-area: contact;
+}
+
+.Propos{
+    grid-area : propos;
+}
+
+.Urgence{
+    grid-area: urgence;
+}
+
+/* ================== Style for a  horizontal demarcation between the HEADER / MENU and ASIDE and SECTION part ==================  */ 
+
+hr{
+    grid-area: hr;
+    width: 100%;
+    border: .25rem solid #F2E1AC;
+}
+
+/* ================== Style for the SECTIONS ==================  */
+
+section{
+    border: .5rem solid #F2836B;
+    color: #F2E1AC;
+}
+
+.sectionMGénérale{
+    grid-area: sectionMG;
+}
+
+.sectionOphtalmo{
+    grid-area: sectionOphtalmo;
+}
+
+/* ================== Style for the ASIDES ==================  */
+
+aside{
+    border: .5rem solid #F2836B;
+    color: #F2E1AC;
+}
+
+.asideMGénérale{
+    grid-area: asideMG;
+}
+
+.asideOphtalmo{
+    grid-area: asideOphtalmo;
 }
