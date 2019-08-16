@@ -239,6 +239,11 @@ section{
     grid-area: sectionOphtalmo;
 }
 
+.h2Section, .texteSection {
+    padding-left: 2rem;
+    text-align: center;
+}
+
 /* ================== Style for the ASIDES ==================  */
 
 aside{
