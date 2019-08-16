@@ -88,10 +88,19 @@ aside{
     color: #F2E1AC;
 }
 
+.h2Aside, .texteAside{
+    padding-left: 2rem;
+}
+
 section{
     grid-area: section;
     border: .5rem solid #F2836B;
     color: #F2E1AC;
+}
+
+.h2Section, .texteSection {
+    padding-left: 2rem;
+    text-align: center;
 }
 
 .hrBeforeFooter
