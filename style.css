@@ -205,11 +205,44 @@ h2 a{
     grid-template-areas: 
     "header nav nav "
     "hr hr hr"
-    "aside section section "
+    "sectionDeniger sectionDeniger sectionDeniger"
+    "sectionDupuis sectionDupuis sectionDupuis"
+    "sectionAuthier sectionAuthier sectionAuthier"
     "hrFooter hrFooter hrFooter"
     "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
     background-color: #F2594B;
+}
+
+/* ================== Style for each SECTION ================== */
+
+.sectionDeniger{
+    grid-area: sectionDeniger;
+}
+
+.sectionDupuis{
+    grid-area: sectionDupuis;
+}
+
+.sectionAuthier{
+    grid-area: sectionAuthier;
+}
+
+.sectionTitle{
+    padding-left: 2rem;
+    text-align: center;
+}
+
+h3{
+    padding-left: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+section p{
+    padding-left: 2rem;
+    text-align: center;
+    font-weight: bold;
 }
