@@ -352,6 +352,11 @@ form{
     grid-area: sectionQue;
 }
 
+.paragraphàPropos{
+    padding: 2rem;
+    text-align: center;
+}
+
 /* ================== Style for FIGURE ================== */
 
 figure{
