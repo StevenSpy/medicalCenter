@@ -247,6 +247,14 @@ section p{
     font-weight: bold;
 }
 
+/* ================== Style for each FIGURE ================== */
+
+.photoDr{
+    text-align: center; 
+}
+
+
+
 /* ================== For the horairesOphtalmo.html page ================== */
 
 .contentHorairesOphtalmo{
