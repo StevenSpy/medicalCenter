@@ -224,6 +224,18 @@ h2 a{
     grid-area: horaireOphtalmo;
 }
 
+/* ================== For each H2 ================== */
+
+.titreHoraire{
+    text-align: center;
+}
+
+/* ================== For each FIGURE ================== */
+
+.imagesService{
+    text-align: center;
+}
+
 /* ================== For the horairesMGénérale.html page ================== */
 
 .contentHorairesMGénérale{
