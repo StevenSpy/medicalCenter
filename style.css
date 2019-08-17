@@ -231,18 +231,15 @@ h2 a{
 }
 
 .sectionTitle{
-    padding-left: 2rem;
     text-align: center;
 }
 
 h3{
-    padding-left: 2rem;
     text-align: center;
     text-decoration: underline;
 }
 
 section p{
-    padding-left: 2rem;
     text-align: center;
     font-weight: bold;
 }
@@ -251,6 +248,10 @@ section p{
 
 .photoDr{
     text-align: center; 
+}
+
+.icons{
+    text-align: center;
 }
 
 
