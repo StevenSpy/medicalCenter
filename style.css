@@ -332,7 +332,7 @@ form{
     "header nav nav "
     "hr hr hr"
     "sectionQui sectionQui sectionQui"
-    "figure figure figure"
+    "figureCMedical figureCMedical figureCMedical"
     "sectionQue sectionQue sectionQue"
     "hrFooter hrFooter hrFooter"
     "footer footer footer";
@@ -359,8 +359,9 @@ form{
 
 /* ================== Style for FIGURE ================== */
 
-figure{
-    grid-area: figure;
+.figureCabinetMedical{
+    grid-area: figureCMedical;
+    text-align: center;
 }
 
 /* ================== For the urgence.html page ================== */
