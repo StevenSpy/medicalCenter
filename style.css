@@ -228,6 +228,7 @@ h2 a{
 
 .titreHoraire{
     text-align: center;
+    text-decoration: underline;
 }
 
 /* ================== For each FIGURE ================== */
