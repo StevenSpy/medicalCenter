@@ -643,4 +643,12 @@
 
   }
     
- 
+/* ================== MEDIA QUERIES FOR TABLET IN PORTRAIT MODE ================== */
+
+@media screen and (min-width: 760px) and (max-width: 1050px){
+
+  .figureCabinetMedical{
+    display: none;
+  }
+
+}
