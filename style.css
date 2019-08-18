@@ -433,3 +433,17 @@ form{
 .sectionNumUtiles{
     grid-area: sectionNum;
 }
+
+/* ================== Style for each TABLE ================== */
+
+.tablePermanence{
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 50%;
+    border: .35rem solid #F2E1AC;;
+    
+}
+
+td, tr{
+    border: .25rem solid #F2E1AC; ;
+}
