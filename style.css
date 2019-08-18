@@ -447,3 +447,12 @@ form{
 td, tr{
     border: .25rem solid #F2E1AC; ;
 }
+
+.tdfooter{
+    text-align: center;
+}
+
+.tdfooter a{
+    text-decoration: none;
+    color: #F2E1AC;
+}
