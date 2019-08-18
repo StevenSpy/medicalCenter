@@ -1,475 +1,600 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 /* ================== Reset CSS ================== */
-html{
-    margin: 0;
-    padding : 0;
-    font-size : 10px;
-    font-family: 'Nunito', sans-serif;
-}
 
-body{
+  html {
     margin: 0;
     padding: 0;
-}
+    font-size: 10px;
+    font-family: "Nunito", sans-serif;
+  }
 
-/* ================== For the index.html page ==================  */
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-.content{
+ /* ================== For the DESKTOP VERSION ==================  */
+
+  /* ================== For the index.html page ==================  */
+
+  .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "aside section section "
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "aside section section "
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for the HEADER and the MENU ==================  */
+  /* ================== Style for the HEADER and the MENU ==================  */
 
-header{
+  header {
     grid-area: header;
     justify-self: left;
-}
+  }
 
-nav{
+  nav {
     grid-area: nav;
-}
+  }
 
-.menu{
+  .menu {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);   
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "accueil disciplines horaires contact propos urgence";
     text-align: center;
     padding-top: 8rem;
-    color: #F2E1AC;
+    color: #f2e1ac;
+  }
 
-    
-}
-
-li{
+  li {
     list-style: none;
-}
+  }
 
-li a{
+  li a {
     text-decoration: none;
-    color: #F2E1AC;
-}
+    color: #f2e1ac;
+  }
 
-.Accueil{
+  .Accueil {
     grid-area: accueil;
-}
+  }
 
-.Disciplines{
+  .Disciplines {
     grid-area: disciplines;
-}
+  }
 
-.Horaires{
+  .Horaires {
     grid-area: horaires;
-}
+  }
 
-.Contact{
+  .Contact {
     grid-area: contact;
-}
+  }
 
-.Propos{
-    grid-area : propos;
-}
+  .Propos {
+    grid-area: propos;
+  }
 
-.Urgence{
+  .Urgence {
     grid-area: urgence;
-}
+  }
 
-/* ================== Style for a  horizontal demarcation between the HEADER / MENU and ASIDE and SECTION part ==================  */ 
+  /* ================== Style for a  horizontal demarcation between the HEADER / MENU and ASIDE and SECTION part ==================  */
 
-hr{
+  hr {
     grid-area: hr;
     width: 100%;
-    border: .25rem solid #F2E1AC;
-}
+    border: .25rem solid #f2e1ac;
+  }
 
-/* ================== Style for the ASIDE ==================  */
+  /* ================== Style for the ASIDE ==================  */
 
-aside{
+  aside {
     grid-area: aside;
-    border: .5rem solid #F2836B;
-    color: #F2E1AC;
-}
+    border: .5rem solid #f2836b;
+    color: #f2e1ac;
+  }
 
-.h2Aside, .texteAside{
+  .h2Aside,
+  .texteAside {
     padding-left: 2rem;
-}
+  }
 
-/* ================== Style for the SECTION ==================  */
+  /* ================== Style for the SECTION ==================  */
 
-section{
+  section {
     grid-area: section;
-    border: .5rem solid #F2836B;
-    color: #F2E1AC;
-}
+    border: .5rem solid #f2836b;
+    color: #f2e1ac;
+  }
 
-.h2Section, .texteSection {
+  .h2Section,
+  .texteSection {
     padding-left: 2rem;
     text-align: center;
-}
+  }
 
-/* ================== Style for a  horizontal demarcation between the FOOTER and ASIDE and SECTION part ==================  */
+  /* ================== Style for a  horizontal demarcation between the FOOTER and ASIDE and SECTION part ==================  */
 
-.hrBeforeFooter
-{
+  .hrBeforeFooter {
     grid-area: hrFooter;
-    border: .25rem solid #F2E1AC;
-}
+    border: .25rem solid #f2e1ac;
+  }
 
-/* ================== Style for the FOOTER ==================  */
+  /* ================== Style for the FOOTER ==================  */
 
-.footer{
+  .footer {
     grid-area: footer;
     justify-self: center;
     padding-bottom: 4rem;
-    
-}
+  }
 
-.footer a{
-
+  .footer a {
     text-decoration: none;
-    color: #F2E1AC;
-    
-}
+    color: #f2e1ac;
+  }
 
-/* ================== For the nosDisciplines.html page ================== */
+  /* ================== For the nosDisciplines.html page ================== */
 
-.contentDisciplines{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: minmax(1rem, auto);
-        grid-template-areas: 
-        "header nav nav nav "
-        "hr hr hr hr"
-        "sectionMG sectionMG asideMG asideMG"
-        "sectionOphtalmo sectionOphtalmo asideOphtalmo asideOphtalmo"
-        "hrFooter hrFooter hrFooter hrFooter"
-        "footer footer footer footer";
-        grid-column-gap: 3rem;
-        grid-row-gap: 4rem;
-        font-size: 1.5rem;
-        background-color: #F2594B;
-}
-
-/* ================== Style for the SECTIONS ==================  */
-
-
-.sectionMGénérale{
-    grid-area: sectionMG;
-}
-
-.sectionOphtalmo{
-    grid-area: sectionOphtalmo;
-}
-
-.h2Section, .texteSection {
-    padding-left: 2rem;
-    text-align: center;
-}
-
-/* ================== Style for the ASIDES ==================  */
-
-.asideMGénérale{
-    grid-area: asideMG;
-}
-
-.asideOphtalmo{
-    grid-area: asideOphtalmo;
-}
-
-.h2Aside, .texteAside{
-    padding-left: 2rem;
-    text-align: center;
-}
-h2 a{
-    text-decoration: none;
-    color : #F2E1AC; 
-}
-
-/* ================== For the horaires.html page ================== */
-
-.contentHoraires{
+  .contentDisciplines {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav nav "
-    "hr hr hr hr"
-    "horaireMG horaireMG horaireOphtalmo horaireOphtalmo"
-    "hrFooter hrFooter hrFooter hrFooter"
-    "footer footer footer footer";
+    grid-template-areas:
+      "header nav nav nav "
+      "hr hr hr hr"
+      "sectionMG sectionMG asideMG asideMG"
+      "sectionOphtalmo sectionOphtalmo asideOphtalmo asideOphtalmo"
+      "hrFooter hrFooter hrFooter hrFooter"
+      "footer footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== For each SECTION ================== */
+  /* ================== Style for the SECTIONS ==================  */
 
-.horairesMG{
+  .sectionMGénérale {
+    grid-area: sectionMG;
+  }
+
+  .sectionOphtalmo {
+    grid-area: sectionOphtalmo;
+  }
+
+  .h2Section, .texteSection {
+    padding-left: 2rem;
+    text-align: center;
+  }
+
+  /* ================== Style for the ASIDES ==================  */
+
+  .asideMGénérale {
+    grid-area: asideMG;
+  }
+
+  .asideOphtalmo {
+    grid-area: asideOphtalmo;
+  }
+
+  .h2Aside,
+  .texteAside {
+    padding-left: 2rem;
+    text-align: center;
+  }
+  h2 a {
+    text-decoration: none;
+    color: #f2e1ac;
+  }
+
+  /* ================== For the horaires.html page ================== */
+
+  .contentHoraires {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-template-areas:
+      "header nav nav nav "
+      "hr hr hr hr"
+      "horaireMG horaireMG horaireOphtalmo horaireOphtalmo"
+      "hrFooter hrFooter hrFooter hrFooter"
+      "footer footer footer footer";
+    grid-column-gap: 3rem;
+    grid-row-gap: 4rem;
+    font-size: 1.5rem;
+    background-color: #f2594b;
+  }
+
+  /* ================== For each SECTION ================== */
+
+  .horairesMG {
     grid-area: horaireMG;
-}
+  }
 
-.horairesOphtalmo{
+  .horairesOphtalmo {
     grid-area: horaireOphtalmo;
-}
+  }
 
-/* ================== For each H2 ================== */
+  /* ================== For each H2 ================== */
 
-.titreHoraire{
+  .titreHoraire {
     text-align: center;
     text-decoration: underline;
-}
+  }
 
-/* ================== For each FIGURE ================== */
+  /* ================== For each FIGURE ================== */
 
-.imagesService{
+  .imagesService {
     text-align: center;
-}
+  }
 
-/* ================== For the horairesMGénérale.html page ================== */
+  /* ================== For the horairesMGénérale.html page ================== */
 
-.contentHorairesMGénérale{
+  .contentHorairesMGénérale {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "sectionDeniger sectionDeniger sectionDeniger"
-    "sectionDupuis sectionDupuis sectionDupuis"
-    "sectionAuthier sectionAuthier sectionAuthier"
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "sectionDeniger sectionDeniger sectionDeniger"
+      "sectionDupuis sectionDupuis sectionDupuis"
+      "sectionAuthier sectionAuthier sectionAuthier"
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for each SECTION ================== */
+  /* ================== Style for each SECTION ================== */
 
-.sectionDeniger{
+  .sectionDeniger {
     grid-area: sectionDeniger;
-}
+  }
 
-.sectionDupuis{
+  .sectionDupuis {
     grid-area: sectionDupuis;
-}
+  }
 
-.sectionAuthier{
+  .sectionAuthier {
     grid-area: sectionAuthier;
-}
+  }
 
-.sectionTitle{
+  .sectionTitle {
     text-align: center;
-}
+  }
 
-h3{
+  h3 {
     text-align: center;
     text-decoration: underline;
-}
+  }
 
-section p{
+  section p {
     text-align: center;
     font-weight: bold;
-}
+  }
 
-/* ================== Style for each FIGURE ================== */
+  /* ================== Style for each FIGURE ================== */
 
-.photoDr{
-    text-align: center; 
-}
-
-.icons{
+  .photoDr {
     text-align: center;
-}
+  }
 
+  .icons {
+    text-align: center;
+  }
 
+  /* ================== For the horairesOphtalmo.html page ================== */
 
-/* ================== For the horairesOphtalmo.html page ================== */
-
-.contentHorairesOphtalmo{
+  .contentHorairesOphtalmo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "sectionBonneville sectionBonneville sectionBonneville"
-    "sectionRoux sectionRoux sectionRoux"
-    "sectionHoang sectionHoang sectionHoang"
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "sectionBonneville sectionBonneville sectionBonneville"
+      "sectionRoux sectionRoux sectionRoux"
+      "sectionHoang sectionHoang sectionHoang"
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for each SECTION ================== */
+  /* ================== Style for each SECTION ================== */
 
-.sectionBonneville{
+  .sectionBonneville {
     grid-area: sectionBonneville;
-}
+  }
 
-.sectionRoux{
+  .sectionRoux {
     grid-area: sectionRoux;
-}
+  }
 
-.sectionHoang{
+  .sectionHoang {
     grid-area: sectionHoang;
-}
+  }
 
-/* ================== For the urgence.html page ================== */
+  /* ================== For the contact.html page ================== */
 
-.contentContact{
+  .contentContact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "Formulaire Formulaire Formulaire"
-    "Map Map Map"
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "Formulaire Formulaire Formulaire"
+      "Map Map Map"
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for each SECTION ================== */
-.sectionFormulaire{
+  /* ================== Style for each SECTION ================== */
+  .sectionFormulaire {
     grid-area: Formulaire;
-}
+  }
 
-.sectionMAP{
+  .sectionMAP {
     grid-area: Map;
-}
+  }
 
-.map{
+  .map {
     width: 100%;
-}
+  }
 
-/* ================== For the FORM ================== */
+  /* ================== For the FORM ================== */
 
-form{
+  form {
     text-align: center;
-    color: #F2E1AC;
-}
+    color: #f2e1ac;
+  }
 
+  /* ================== For the àpropos.html page ================== */
 
-
-/* ================== For the àpropos.html page ================== */
-
-.contentàpropos{
+  .contentàpropos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "sectionQui sectionQui sectionQui"
-    "figureCMedical figureCMedical figureCMedical"
-    "sectionQue sectionQue sectionQue"
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "sectionQui sectionQui sectionQui"
+      "figureCMedical figureCMedical figureCMedical"
+      "sectionQue sectionQue sectionQue"
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for each SECTION ================== */
+  /* ================== Style for each SECTION ================== */
 
-.sectionQuiSommes{
+  .sectionQuiSommes {
     grid-area: sectionQui;
-}
+  }
 
-.sectionQueFaisons{
+  .sectionQueFaisons {
     grid-area: sectionQue;
-}
+  }
 
-.paragraphàPropos{
+  .paragraphàPropos {
     padding: 2rem;
     text-align: center;
-}
+  }
 
-/* ================== Style for FIGURE ================== */
+  /* ================== Style for FIGURE ================== */
 
-.figureCabinetMedical{
+  .figureCabinetMedical {
     grid-area: figureCMedical;
     text-align: center;
-}
+  }
 
-/* ================== For the urgence.html page ================== */
+  /* ================== For the urgence.html page ================== */
 
-.contentUrgence{
+  .contentUrgence {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(1rem, auto);
-    grid-template-areas: 
-    "header nav nav "
-    "hr hr hr"
-    "sectionPerm sectionPerm sectionPerm"
-    "sectionNum sectionNum sectionNum"
-    "hrFooter hrFooter hrFooter"
-    "footer footer footer";
+    grid-template-areas:
+      "header nav nav "
+      "hr hr hr"
+      "sectionPerm sectionPerm sectionPerm"
+      "sectionNum sectionNum sectionNum"
+      "hrFooter hrFooter hrFooter"
+      "footer footer footer";
     grid-column-gap: 3rem;
     grid-row-gap: 4rem;
     font-size: 1.5rem;
-    background-color: #F2594B;
-}
+    background-color: #f2594b;
+  }
 
-/* ================== Style for each SECTION ================== */
+  /* ================== Style for each SECTION ================== */
 
-.sectionPermanence{
+  .sectionPermanence {
     grid-area: sectionPerm;
-}
+  }
 
-.sectionNumUtiles{
+  .sectionNumUtiles {
     grid-area: sectionNum;
-}
+  }
 
-/* ================== Style for each H2 ================== */
+  /* ================== Style for each H2 ================== */
 
-.titlePermanence, .titleNumUtiles{
+  .titlePermanence,
+  .titleNumUtiles {
     text-align: center;
     text-decoration: underline;
-}
+  }
 
-/* ================== Style for each TABLE ================== */
+  /* ================== Style for each TABLE ================== */
 
-.tablePermanence, .tableNumUtiles{
+  .tablePermanence,
+  .tableNumUtiles {
     margin: auto;
     margin-bottom: 1.5rem;
     width: 50%;
-    border: .35rem solid #F2E1AC;;
-    
-}
+    border: .35rem solid #f2e1ac;
+  }
 
-td, tr{
-    border: .25rem solid #F2E1AC;
+  td,
+  tr {
+    border: .25rem solid #f2e1ac;
     text-align: center;
-}
+  }
 
-.tdfooter{
+  .tdfooter {
     text-align: center;
-}
+  }
 
-.tdfooter a{
+  .tdfooter a {
     text-decoration: none;
-    color: #F2E1AC;
-}
+    color: #f2e1ac;
+  }
+
+/* ================== MEDIA QUERIES FOR SMARTPHONE IN PORTRAIT MODE ================== */
+
+  @media screen and (max-width: 760px){
+
+  /* ================== For the index.html page ==================  */
+    
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+      "header"
+      "nav"
+      "hr"
+      "section"
+      "aside"
+      "hrFooter"
+      "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+      }
+
+  /* ================== For the nosDisciplines.html page ================== */
+
+    .contentDisciplines {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "sectionMG"
+        "asideMG"
+        "sectionOphtalmo"
+        "asideOphtalmo"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+    }
+
+  /* ================== For the horaires.html page ================== */
+
+    .contentHoraires {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "hr hr"
+        "horaireMG horaireMG"
+        "horaireOphtalmo horaireOphtalmo"
+        "hrFooter hrFooter"
+        "footer footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25em;
+      background-color: #f2594b;
+    }
+
+  /* ================== For the contact.html page ================== */
+
+    .contentContact {
+      display: grid;
+      grid-template-columns: fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "Formulaire"
+        "Map"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+    }
+
+   /* ================== For the àpropos.html page ================== */
+
+    .contentàpropos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "sectionQui"
+        "sectionQue"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+  }
+
+  .figureCabinetMedical{
+    display: none;
+  }
+
+  /* ================== For the urgence.html page ================== */
+
+    .contentUrgence {
+      display: grid;
+      grid-template-columns:  1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "sectionPerm"
+        "sectionNum"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+  }
+
+  }
+    
+ 
