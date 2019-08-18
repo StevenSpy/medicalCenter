@@ -534,6 +534,52 @@
       background-color: #f2594b;
     }
 
+    /* ================== For the horairesMGénérale.html page ================== */
+
+    .contentHorairesMGénérale {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "sectionDeniger"
+        "sectionDupuis"
+        "sectionAuthier"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+  }
+
+    /* ================== For the horairesOphtalmo.html page ================== */
+
+    .contentHorairesOphtalmo {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: minmax(1rem, auto);
+      grid-template-areas:
+        "header"
+        "nav"
+        "hr"
+        "sectionBonneville"
+        "sectionRoux"
+        "sectionHoang"
+        "hrFooter"
+        "footer";
+      grid-row-gap: 2rem;
+      font-size: 1.25rem;
+      background-color: #f2594b;
+  }
+
+    /* ================== Style for each FIGURE of horairesMGénérale.html and horairesOphtalmo.html ================== */
+
+    .photoDr {
+      display: none;      
+    }
+
   /* ================== For the contact.html page ================== */
 
     .contentContact {
