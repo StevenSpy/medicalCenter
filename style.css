@@ -434,9 +434,16 @@ form{
     grid-area: sectionNum;
 }
 
+/* ================== Style for each H2 ================== */
+
+.titlePermanence, .titleNumUtiles{
+    text-align: center;
+    text-decoration: underline;
+}
+
 /* ================== Style for each TABLE ================== */
 
-.tablePermanence{
+.tablePermanence, .tableNumUtiles{
     margin: auto;
     margin-bottom: 1.5rem;
     width: 50%;
@@ -445,7 +452,8 @@ form{
 }
 
 td, tr{
-    border: .25rem solid #F2E1AC; ;
+    border: .25rem solid #F2E1AC;
+    text-align: center;
 }
 
 .tdfooter{
