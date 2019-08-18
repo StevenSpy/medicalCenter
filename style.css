@@ -340,7 +340,8 @@ section p{
     grid-template-areas: 
     "header nav nav "
     "hr hr hr"
-    "main main main"
+    "Formulaire Formulaire Formulaire"
+    "Map Map Map"
     "hrFooter hrFooter hrFooter"
     "footer footer footer";
     grid-column-gap: 3rem;
@@ -349,9 +350,17 @@ section p{
     background-color: #F2594B;
 }
 
-/* ================== Style for the MAIN ================== */
-main{
-    grid-area: main;
+/* ================== Style for each SECTION ================== */
+.sectionFormulaire{
+    grid-area: Formulaire;
+}
+
+.sectionMAP{
+    grid-area: Map;
+}
+
+.map{
+    width: 100%;
 }
 
 /* ================== For the FORM ================== */
